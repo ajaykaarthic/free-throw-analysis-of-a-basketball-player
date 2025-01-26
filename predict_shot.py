@@ -65,12 +65,12 @@ def get_angle(img, landmark_list, point1, point2, point3, draw=True):
             cv2.line(img, (x3, y3), (x2, y2), (255,255,255), 3)
 
             #Drawing circles at intersection points of lines
-            cv2.circle(img, (x1, y1), 5, (75,0,130), cv2.FILLED)
-            cv2.circle(img, (x1, y1), 15, (75,0,130), 2)
-            cv2.circle(img, (x2, y2), 5, (75,0,130), cv2.FILLED)
-            cv2.circle(img, (x2, y2), 15, (75,0,130), 2)
-            cv2.circle(img, (x3, y3), 5, (75,0,130), cv2.FILLED)
-            cv2.circle(img, (x3, y3), 15, (75,0,130), 2)
+            cv2.circle(img, (x1, y1), 5, (100,0,130), cv2.FILLED)
+            cv2.circle(img, (x1, y1), 15, (100,0,130), 2)
+            cv2.circle(img, (x2, y2), 5, (100,0,130), cv2.FILLED)
+            cv2.circle(img, (x2, y2), 15, (100,0,130), 2)
+            cv2.circle(img, (x3, y3), 5, (100,0,130), cv2.FILLED)
+            cv2.circle(img, (x3, y3), 15, (100,0,130), 2)
             
             #Show angles between lines
             cv2.putText(img, str(int(angle)), (x2-50, y2+50), 
